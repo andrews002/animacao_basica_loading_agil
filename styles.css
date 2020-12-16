@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.background{
+	width: 100%;
+	height: 100vh;
+
+
+}
+
+.background img{
+	width: 150px;
+	height: 108px;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	animation: agil 2s ease infinite alternate;	    
+}
+
+.shadow{
+	position: absolute;
+	top: 55%;
+	left: 45%;
+	width: 120px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+	animation: shadow 2s ease infinite alternate;	    
+}
+
+@keyframes agil {
+  0%   {top: 45%; }
+  100% {top: 35%; transform: rotate(360deg);}
+}
+
+@keyframes shadow {
+  0%   {width: 120px; height: 40px; left: 45%;}
+  100% {width: 80px; height: 20px; left: calc(45% + 30px);}
+}
